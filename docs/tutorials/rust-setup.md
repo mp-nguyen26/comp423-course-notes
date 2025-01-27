@@ -83,5 +83,38 @@ git push --set-upstream origin main
     }
 }
 ```
-!!! info "More about `devcontainer.json"
+!!! info "More about `devcontainer.json`"
     The `devcontainer.json` file specifies configuration for a consistent development environment using a Docker image.
+
+### Step 2: Reopen your project in a VS Code Dev Container.
+
+* Press `Ctrl+Shift+P` for Windows or `Cmd+Shift+P` for Mac, type "Dev Containers: Reopen in Container," and select that option
+* This may take a few minutes while the image is downloaded; the download size can be several hundred megabytes. Click on "show log" at the prompt in the bottom right corner of your VS Code window to track its progress.
+* Once the dev container setup is complete, close the terminal tab (trash can) and open a new terminal pane within VS Code (`Ctrl+Shift+P` or `Cmd+Shift+P` and search for "Terminal").
+* Try running `rustc --version` to prove that the container is running a recent version of Rust. (As of this writing in January 2025, this version should be `1.83.0`)
+
+### Step 3: Build and run your Rust program.
+
+* Run the following command:
+```
+cargo new my-project --vcs none
+```
+
+!!! info
+    The flag `--vcs none` ensures that a new `git` repository ins't created.
+
+* A new folder with the name `my-project` will be created. Navigate to `my-project/src/main.rs`. There should be a simple "Hello World" function there. Replace this with:
+```rs
+fn main() {
+    println!("Hello COMP423!");
+}
+```
+
+* Then, `cd` to your `my-project` folder.
+
+* Run `cargo build`. This is similar to `gcc` with C, but instead it compiles source files from Rust to a binary executable file.
+
+!!! warning
+    An error will pop up if you run this command while not in your `my-project` folder.
+
+* Last but not least, run `cargo run`, which actually executes the file and allows it to function. You should see `Hello COMP423!` in the output!
