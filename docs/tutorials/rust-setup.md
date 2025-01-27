@@ -10,7 +10,7 @@ Before we get started, make sure you have the following:
 2. **Git installed**
 3. **Visual Studio Code**
 4. **Docker**
-5. **Some knowledge of command-lind basics**
+5. **Some knowledge of command-line basics**
 
 ## Git Setup
 
