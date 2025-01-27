@@ -50,7 +50,7 @@ git commit -m "Initial commit with README"
 
 * Add the GitHub repository as a remote:
 ```
-git remote add origin https://github.com/<your-username>/comp423-course-notes.git
+git remote add origin https://github.com/<your-username>/rust-project.git
 ```
 * Replace `<your-username>` with your GitHub username.
 * Push your local commits to your GitHub repository:
