@@ -1,4 +1,4 @@
-# Setting up a dev container for Rust
+# Setting Up a Dev Container for Rust
 
 * Primary author: [Minh Nguyen](https://github.com/mp-nguyen26)
 * Reviewer: [Christina Do](https://github.com/chrxstyxdo)
@@ -32,6 +32,7 @@ git init
 * Create a README file:
 ```
 echo "# Rust Project" > README.md
+echo "# https://mp-nguyen26.github.io/comp423-course-notes/" > README.md
 git add README.md
 git commit -m "Initial commit with README"
 ```
